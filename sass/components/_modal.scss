@@ -4,14 +4,19 @@
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 528px;
-  height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   top: 50%;
   left: 50%;
   transition: transform 250ms, rotatex 500ms;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-button {
@@ -41,8 +46,11 @@
   margin: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: var(--title-text-color);
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__button-section {
