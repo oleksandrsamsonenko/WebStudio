@@ -1061,6 +1061,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe__label {
+    min-width: 100%;
+    max-width: 450px;
+  }
+}
+
 .subscribe__input {
   outline: transparent;
   color: var(--primary-white-color);
@@ -1068,7 +1075,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 16px;
-  width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -1080,6 +1086,17 @@ ul {
   transition: border var(--timing), -webkit-box-shadow var(--timing);
   transition: border var(--timing), box-shadow var(--timing);
   transition: border var(--timing), box-shadow var(--timing), -webkit-box-shadow var(--timing);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe__input {
+    min-width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__input {
@@ -1167,7 +1184,8 @@ ul {
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  min-width: 450px;
+  max-width: 450px;
+  width: 100%;
   min-height: 609px;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1472,6 +1490,7 @@ ul {
   padding-right: 40px;
   background-color: var(--primary-white-color);
   z-index: 999;
+  overflow: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -1562,9 +1581,9 @@ ul {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   padding-right: 10px;
-  padding-left: 10px;
 }
 
-.mobile-menu-socials-item:not(:last-child) .mobile-menu-link {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.mobile-menu-socials-item:not(:first-child) .mobile-menu-link {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
 }/*# sourceMappingURL=main.css.map */
