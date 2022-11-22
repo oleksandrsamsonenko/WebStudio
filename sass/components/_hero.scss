@@ -15,7 +15,7 @@
   padding-top: 118px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-image: linear-gradient(rgba(47, 48, 54, 0.4), rgba(47, 48, 54, 0.4)),
     url(../images/hero/img-mob@1x.jpg);
 
@@ -40,7 +40,6 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
-    background-size: cover;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 54, 0.4), rgba(47, 48, 54, 0.4)),
       url(../images/hero/img-dsc@1x.jpg);
@@ -70,7 +69,6 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    // padding-top: 200px;
   }
 }
 
