@@ -130,7 +130,7 @@ ul {
   margin-right: auto;
   width: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
   .header {
     position: fixed;
     left: 50%;
@@ -314,7 +314,7 @@ ul {
   padding-top: 118px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 54, 0.4)), to(rgba(47, 48, 54, 0.4))), url(../images/hero/img-mob@1x.jpg);
   background-image: linear-gradient(rgba(47, 48, 54, 0.4), rgba(47, 48, 54, 0.4)), url(../images/hero/img-mob@1x.jpg);
 }
@@ -340,7 +340,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero__container {
     padding-top: 200px;
-    background-size: cover;
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 54, 0.4)), to(rgba(47, 48, 54, 0.4))), url(../images/hero/img-dsc@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 54, 0.4), rgba(47, 48, 54, 0.4)), url(../images/hero/img-dsc@1x.jpg);
@@ -455,11 +454,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .features__picture {
-    width: 270px;
-  }
 }
 
 .features__subtitle {
@@ -1485,7 +1479,7 @@ ul {
 }
 
 .menu-toggle {
-  position: relative;
+  position: absolute;
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
@@ -1497,6 +1491,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 23px;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -1546,6 +1544,10 @@ ul {
   top: 16px;
   right: 16px;
   color: var(--title-text-color);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  top: 21px;
+  right: 25px;
 }
 
 .mobile-menu {
@@ -1606,6 +1608,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu-link {
