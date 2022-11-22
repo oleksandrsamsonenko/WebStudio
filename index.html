@@ -145,7 +145,8 @@
               <li class="skills__item">
                 <img
                   class="skills__picture"
-                  src="./images/img1.jpg"
+                  srcset="./images/skills/img-dsc1@1x.jpg 1x, ./images/skills/img-dsc1@2x.jpg 2x"
+                  src="./images/skills/img-dsc1@1x.jpg"
                   width="370"
                   alt="Розробка застосунків для десктопів"
                 />
@@ -154,7 +155,8 @@
               <li class="skills__item">
                 <img
                   class="skills__picture"
-                  src="./images/img2.jpg"
+                  srcset="./images/skills/img-dsc2@1x.jpg 1x, ./images/skills/img-dsc2@2x.jpg 2x"
+                  src="./images/skills/img-dsc2@1x.jpg"
                   width="370"
                   alt="Розробка застосунків для мобільних пристроїв"
                 />
@@ -163,7 +165,8 @@
               <li class="skills__item">
                 <img
                   class="skills__picture"
-                  src="./images/img3.jpg"
+                  srcset="./images/skills/img-dsc3@1x.jpg 1x, ./images/skills/img-dsc3@2x.jpg 2x"
+                  src="./images/skills/img-dsc3@1x.jpg"
                   width="370"
                   alt="Розробка дизайну"
                 />
@@ -182,12 +185,27 @@
 
           <ul class="members">
             <li class="members__card">
-              <img
-                class="members__picture"
-                src="./images/igor.jpg"
-                width="270"
-                alt="Фото Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-dsc1@1x.jpg 1x, ./images/team/img-dsc1@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-tab1@1x.jpg 1x, ./images/team/img-tab1@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-mob1@1x.jpg 1x, ./images/team/img-mob1@2x.jpg 2x"
+                />
+                <img
+                  class="members__picture"
+                  src="./images/team/img-mob1@1x.jpg"
+                  alt="Фото Ігор Дем'яненко"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="members__name">Ігор Дем'яненко</h3>
               <p class="members__job">Product Designer</p>
 
@@ -239,12 +257,26 @@
               </ul>
             </li>
             <li class="members__card">
-              <img
-                class="members__picture"
-                src="./images/olga.jpg"
-                width="270"
-                alt="Фото Ольга Рєпіна"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-dsc2@1x.jpg 1x, ./images/team/img-dsc2@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-tab2@1x.jpg 1x, ./images/team/img-tab2@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-mob2@1x.jpg 1x, ./images/team/img-mob2@2x.jpg 2x"
+                />
+                <img
+                  class="members__picture"
+                  src="./images/team/img-mob2@1x.jpg"
+                  alt="Фото Ольга Рєпіна"
+                />
+              </picture>
+
               <h3 class="members__name">Ольга Рєпіна</h3>
               <p class="members__job">Frontend Developer</p>
               <ul class="socials">
@@ -295,12 +327,26 @@
               </ul>
             </li>
             <li class="members__card">
-              <img
-                class="members__picture"
-                src="./images/mykola.jpg"
-                width="270"
-                alt="Фото Микола Тарасов"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-dsc3@1x.jpg 1x, ./images/team/img-dsc3@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-tab3@1x.jpg 1x, ./images/team/img-tab3@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-mob3@1x.jpg 1x, ./images/team/img-mob3@2x.jpg 2x"
+                />
+                <img
+                  class="members__picture"
+                  src="./images/team/img-mob3@1x.jpg"
+                  alt="Фото Микола Тарасов"
+                />
+              </picture>
+
               <h3 class="members__name">Микола Тарасов</h3>
               <p class="members__job">Marketing</p>
               <ul class="socials">
@@ -351,12 +397,26 @@
               </ul>
             </li>
             <li class="members__card">
-              <img
-                class="members__picture"
-                src="./images/mykhaylo.jpg"
-                width="270"
-                alt="Фото Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-dsc4@1x.jpg 1x, ./images/team/img-dsc4@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-tab4@1x.jpg 1x, ./images/team/img-tab4@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-mob4@1x.jpg 1x, ./images/team/img-mob4@2x.jpg 2x"
+                />
+                <img
+                  class="members__picture"
+                  src="./images/team/img-mob4@1x.jpg"
+                  alt="Фото Михайло Єрмаков"
+                />
+              </picture>
+
               <h3 class="members__name">Михайло Єрмаков</h3>
               <p class="members__job">UI Designer</p>
               <ul class="socials">
@@ -637,8 +697,10 @@
           <li class="mobile-menu-item"><a href="#" class="mobile-menu-nav">Контакти</a></li>
         </div>
         <div>
-          <li><a href="tel:+38 0961111111" class="mobile-menu-phone">+38 096 111 11 11</a></li>
-          <li>
+          <li class="mobile-menu-item">
+            <a href="tel:+38 0961111111" class="mobile-menu-phone">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu-item">
             <a href="mailto:info@devstudio.com" class="mobile-menu-mail">info@devstudio.com</a>
           </li>
           <ul class="mobile-menu-socials">

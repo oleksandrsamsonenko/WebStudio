@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
