@@ -123,7 +123,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 0;
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #ececec;
   width: 100%;
