@@ -21,7 +21,7 @@
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: fit-content;
+    width: calc((100% - 90px) / 4);
   }
 }
 
