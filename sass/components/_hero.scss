@@ -4,14 +4,7 @@
   padding: 0;
   background-color: var(--primary-darkgrey-color);
   text-align: center;
-  padding-top: 60px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 0;
-  }
-}
-
-.hero__container {
   padding-top: 118px;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,7 +18,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 54, 0.4), rgba(47, 48, 54, 0.4)),
       url(../images/hero/img-tab@1x.jpg);
 
